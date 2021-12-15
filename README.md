@@ -1,31 +1,31 @@
 # devops-netology
 Test
 
-###Выполнение задания
+###В¬С‹РїРѕР»РЅРµРЅРёРµ Р·Р°РґР°РЅРёВ¤
 # Local .terraform directories
-**/.terraform/* #будут проигнорированы все файлы и папки во всех каталогах .terraform, где бы каталог .terraform находился
+**/.terraform/* #Р±СѓРґСѓС‚ РїСЂРѕРёРіРЅРѕСЂРёСЂРѕРІР°РЅС‹ РІСЃРµ С„Р°Р№Р»С‹ Рё РїР°РїРєРё РІРѕ РІСЃРµС… РєР°С‚Р°Р»РѕРіР°С… .terraform, РіРґРµ Р±С‹ РєР°С‚Р°Р»РѕРі .terraform РЅР°С…РѕРґРёР»СЃВ¤
 
 # .tfstate files
-*.tfstate    # проигнорировать файлы с расширением  .tfstate
-*.tfstate.*  # проигнорировать все файлы в имени которых встречается .tfstate.
+*.tfstate    # РїСЂРѕРёРіРЅРѕСЂРёСЂРѕРІР°С‚СЊ С„Р°Р№Р»С‹ СЃ СЂР°СЃС€РёСЂРµРЅРёРµРј  .tfstate
+*.tfstate.*  # РїСЂРѕРёРіРЅРѕСЂРёСЂРѕРІР°С‚СЊ РІСЃРµ С„Р°Р№Р»С‹ РІ РёРјРµРЅРё РєРѕС‚РѕСЂС‹С… РІСЃС‚СЂРµС‡Р°РµС‚СЃВ¤ .tfstate.
 
 # Crash log files
-crash.log #проигнорировать файл crash.log
-crash.*.log #проигнорировать файл, соотвествующий маске crash.ЛюбоеЗначение.log 
+crash.log #РїСЂРѕРёРіРЅРѕСЂРёСЂРѕРІР°С‚СЊ С„Р°Р№Р» crash.log
+crash.*.log #РїСЂРѕРёРіРЅРѕСЂРёСЂРѕРІР°С‚СЊ С„Р°Р№Р», СЃРѕРѕС‚РІРµСЃС‚РІСѓСЋС‰РёР№ РјР°СЃРєРµ crash.Р‹СЋР±РѕРµВ«РЅР°С‡РµРЅРёРµ.log 
 
 # Exclude all .tfvars files, which are likely to contain sentitive data, such as
 # password, private keys, and other secrets. These should not be part of version
 # control as they are data points which are potentially sensitive and subject
 # to change depending on the environment.
 #
-*.tfvars  #проигнорировать все файлы с расширением .tfvars
+*.tfvars  #РїСЂРѕРёРіРЅРѕСЂРёСЂРѕРІР°С‚СЊ РІСЃРµ С„Р°Р№Р»С‹ СЃ СЂР°СЃС€РёСЂРµРЅРёРµРј .tfvars
 
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
-override.tf    # игнорировать файлы override.tf
-override.tf.json  # игнорировать файлы override.tf.json
-*_override.tf  #игнорировать файлы соответствующие маске ЛюбоеЗначение_override.tf
-*_override.tf.json #игнорировать файлы соответствующие маске ЛюбоеЗначение_override.tf.json
+override.tf    # РёРіРЅРѕСЂРёСЂРѕРІР°С‚СЊ С„Р°Р№Р»С‹ override.tf
+override.tf.json  # РёРіРЅРѕСЂРёСЂРѕРІР°С‚СЊ С„Р°Р№Р»С‹ override.tf.json
+*_override.tf  #РёРіРЅРѕСЂРёСЂРѕРІР°С‚СЊ С„Р°Р№Р»С‹ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёРµ РјР°СЃРєРµ Р‹СЋР±РѕРµВ«РЅР°С‡РµРЅРёРµ_override.tf
+*_override.tf.json #РёРіРЅРѕСЂРёСЂРѕРІР°С‚СЊ С„Р°Р№Р»С‹ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёРµ РјР°СЃРєРµ Р‹СЋР±РѕРµВ«РЅР°С‡РµРЅРёРµ_override.tf.json
 
 # Include override files you do wish to add to version control using negated pattern
 #
@@ -35,5 +35,5 @@ override.tf.json  # игнорировать файлы override.tf.json
 # example: *tfplan*
 
 # Ignore CLI configuration files
-.terraformrc  #не включать файлы .terraformrc
-terraform.rc  #не включать файлы terraform.rc
+.terraformrc  #РЅРµ РІРєР»СЋС‡Р°С‚СЊ С„Р°Р№Р»С‹ .terraformrc
+terraform.rc  #РЅРµ РІРєР»СЋС‡Р°С‚СЊ С„Р°Р№Р»С‹ terraform.rc
