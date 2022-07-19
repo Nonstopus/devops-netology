@@ -14,11 +14,11 @@
 
 ### Решение:
 
-![скриншот 2](assets/swarm2.jpg)
+![скриншот 2](assets/swarm2.JPG)
 
 ## Задача 3
 
 ### Решение:
 
-![скриншот 3](assets/swarm3.jpgpng)
+![скриншот 3](assets/swarm3.JPG)
  
