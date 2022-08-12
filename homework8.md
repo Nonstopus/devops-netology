@@ -64,29 +64,18 @@ GRANT INSERT ON TABLE public.orders TO \"test-simple-user\";
 GRANT UPDATE ON TABLE public.orders TO \"test-simple-user\";
 
 GRANT DELETE ON TABLE public.orders TO \"test-simple-user\";
-
-List of databases
-
-Name \| Owner \| Encoding \| Collate \| Ctype \| Access privileges
-
-\-\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-postgres \| postgres \| UTF8 \| en_US.utf8 \| en_US.utf8 \|
-
-template0 \| postgres \| UTF8 \| en_US.utf8 \| en_US.utf8 \| =c/postgres
-+
-
-\| \| \| \| \| postgres=CTc/postgres
-
-template1 \| postgres \| UTF8 \| en_US.utf8 \| en_US.utf8 \| =c/postgres
-+
-
-\| \| \| \| \| postgres=CTc/postgres
-
-test_db \| postgres \| UTF8 \| en_US.utf8 \| en_US.utf8 \|
-
+```
+ List of databases
+   Name    |  Owner   | Encoding |  Collate   |   Ctype    |   Access privileges   
+-----------+----------+----------+------------+------------+-----------------------
+ postgres  | postgres | UTF8     | en_US.utf8 | en_US.utf8 | 
+ template0 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+ template1 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+ test_db   | postgres | UTF8     | en_US.utf8 | en_US.utf8 | 
 (4 rows)
-
+```
 ![](vertopal_ae440ba8ccbf49c9a398c3d212be85b6/media/image1.png)
 
 ![](vertopal_ae440ba8ccbf49c9a398c3d212be85b6/media/image2.png)
@@ -120,7 +109,7 @@ PS C:\\docker\\nettology1308\> docker exec -i pg-docker2 psql -U
 postgres -d test_db -f /var/lib/postgresql/data/dump.sql
 
 Проверяем, что восстановление успешно
-
+```
 postgres-# \l
                                  List of databases
    Name    |  Owner   | Encoding |  Collate   |   Ctype    |   Access privileges   
@@ -131,3 +120,5 @@ postgres-# \l
  template1 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
            |          |          |            |            | postgres=CTc/postgres
  test_db   | postgres | UTF8     | en_US.utf8 | en_US.utf8 | 
+
+```
