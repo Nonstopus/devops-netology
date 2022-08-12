@@ -129,24 +129,13 @@ postgres -d test_db -f /var/lib/postgresql/data/dump.sql
 
 Проверяем, что восстановление успешно
 
-postgres-\# \\l
-
-List of databases
-
-Name \| Owner \| Encoding \| Collate \| Ctype \| Access privileges
-
-\-\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-postgres \| postgres \| UTF8 \| en_US.utf8 \| en_US.utf8 \|
-
-template0 \| postgres \| UTF8 \| en_US.utf8 \| en_US.utf8 \| =c/postgres
-+
-
-\| \| \| \| \| postgres=CTc/postgres
-
-template1 \| postgres \| UTF8 \| en_US.utf8 \| en_US.utf8 \| =c/postgres
-+
-
-\| \| \| \| \| postgres=CTc/postgres
-
-test_db \| postgres \| UTF8 \| en_US.utf8 \| en_US.utf8 \|
+postgres-# \l
+                                 List of databases
+   Name    |  Owner   | Encoding |  Collate   |   Ctype    |   Access privileges   
+-----------+----------+----------+------------+------------+-----------------------
+ postgres  | postgres | UTF8     | en_US.utf8 | en_US.utf8 | 
+ template0 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+ template1 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+ test_db   | postgres | UTF8     | en_US.utf8 | en_US.utf8 | 
