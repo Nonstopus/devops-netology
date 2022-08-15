@@ -1,5 +1,5 @@
-Домашнее задание к занятию "6.3. MySQL"
-#Задача 1.
+# Домашнее задание к занятию "6.3. MySQL"
+# Задача 1.
 PS C:\docker\nettology1508> docker pull mysql:8.0
 PS C:\docker\nettology1508> docker volume create vol_mysql
 PS C:\docker\nettology1508> docker run --rm --name mysql-docker -e MYSQL_ROOT_PASSWORD=mysql -ti -p 3306:3306 -v vol_mysql:/etc/mysql/ mysql:8.0
@@ -47,7 +47,7 @@ mysql> select count(*) from orders where price >300;
 +----------+
 1 row in set (0.00 sec)
 ```
-#Задание 2
+# Задание 2
 
 mysql> CREATE USER 'test'@'localhost' IDENTIFIED BY 'test-pass';
 Query OK, 0 rows affected (0.06 sec)
@@ -74,7 +74,7 @@ mysql> SELECT * FROM INFORMATION_SCHEMA.USER_ATTRIBUTES WHERE USER='test';
 +------+-----------+---------------------------------------+
 1 row in set (0.03 sec)
 
-#Задача 3
+# Задача 3
 ```
 mysql> show table status where name = 'orders';
 +--------+--------+---------+------------+------+----------------+-------------+-----------------+--------------+-----------+----------------+---------------------+---------------------+------------+--------------------+----------+----------------+---------+
@@ -101,7 +101,7 @@ mysql> show profiles;
 +----------+------------+-----------------------------------------+
 3 rows in set, 1 warning (0.00 sec)
 ```
-#Задание 4
+# Задание 4
 ```
 [mysqld]
 pid-file        = /var/run/mysqld/mysqld.pid
