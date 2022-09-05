@@ -46,7 +46,7 @@ nonstop@umbrella:~/go$ go run go1.go
         }    
 ```		
 		
-``		
+```	
 nonstop@umbrella:~/go$ go run go2.go
 Список :  [48 2 96 86 3 68 57 82 63 70 37 34 83 27 19 97 9 17 1]
 Наименьший элемент :  1
