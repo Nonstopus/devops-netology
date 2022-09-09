@@ -2,16 +2,6 @@
 
 > 1. Основное задание:
 
-- Сделать Freestyle Job, который будет запускать ansible-playbook из форка репозитория
-- Сделать Declarative Pipeline, который будет выкачивать репозиторий с плейбукой и запускать её
-- Перенести Declarative Pipeline в репозиторий в файл Jenkinsfile
-- Перенастроить Job на использование Jenkinsfile из репозитория
-- Создать Scripted Pipeline, наполнить его скриптом из pipeline
-- Заменить credentialsId на свой собственный
-- Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозитрий в файл ScriptedJenkinsfile
-- Отправить ссылку на репозиторий в ответе
-
-Ответ:
 
 ScriptedJenkiknsfileq
 ```
