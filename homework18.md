@@ -7,7 +7,7 @@ ScriptedJenkiknsfileq
 ```
 node("ansible_docker"){
     stage("Git checkout"){
-        git credentialsId: 'vmkey', url: 'git@github.com:bysart/example-playbook.git'
+        git credentialsId: 'vmkey', url: 'git@github.com:nonstopus/example-playbook.git'
     }
     stage("Check ssh key"){
         secret_check=true
