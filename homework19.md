@@ -1,5 +1,4 @@
-Ответ:
- 1. Приготовьте свой собственный inventory файл prod.yml.
+## 1. Приготовьте свой собственный inventory файл prod.yml.
     ---
       elasticsearch:
         hosts:
@@ -10,12 +9,12 @@
           kibana001:
             ansible_connection: docker
 
- 2. Допишите playbook: нужно сделать ещё один play, который устанавливает и настраивает kibana.
+ ## 2. Допишите playbook: нужно сделать ещё один play, который устанавливает и настраивает kibana.
 
 Сделано
 
- 3. При создании tasks рекомендую использовать модули: get_url, template, unarchive, file.
- 4. Tasks должны: скачать нужной версии дистрибутив, выполнить распаковку в выбранную директорию, сгенерировать конфигурацию с параметрами.
+ ## 3. При создании tasks рекомендую использовать модули: get_url, template, unarchive, file.
+ ## 4. Tasks должны: скачать нужной версии дистрибутив, выполнить распаковку в выбранную директорию, сгенерировать конфигурацию с параметрами.
 
   - name: Install kibana
     hosts: kibana
@@ -54,14 +53,14 @@
           dest: /etc/profile.d/kib.sh
         tags: kibana
         
- 5. Запустите ansible-lint site.yml и исправьте ошибки, если они есть.
+ ## 5. Запустите ansible-lint site.yml и исправьте ошибки, если они есть.
 Ошибки отсутствовали
 
 19:35:01 nonstop@umbrella:~/devops-ansible/2$ ansible-lint site.yml -vvv
 Examining site.yml of type playbook
 
 
- 6. Попробуйте запустить playbook на этом окружении с флагом --check.
+ ## 6. Попробуйте запустить playbook на этом окружении с флагом --check.
 
 1:05:00 nonstop@umbrella:~/devops-ansible/2$ ansible-playbook -i inventory/prod.yml site.yml --check
 
@@ -93,7 +92,7 @@ kibana001                  : ok=4    changed=2    unreachable=0    failed=1    s
 
 
 
- 7. Запустите playbook на prod.yml окружении с флагом --diff. Убедитесь, что изменения на системе произведены.
+ ## 7. Запустите playbook на prod.yml окружении с флагом --diff. Убедитесь, что изменения на системе произведены.
 
 21:08:47 nonstop@umbrella:~/devops-ansible/2$ ansible-playbook -i inventory/prod.yml site.yml --diff
 
@@ -309,10 +308,10 @@ elastic001                 : ok=9    changed=0    unreachable=0    failed=0    s
 kibana001                  : ok=9    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
 
 
- 9. Подготовьте README.md файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги.
+## 9. Подготовьте README.md файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги.
 
 
 
- 10. Готовый playbook выложите в свой репозиторий, в ответ предоставьте ссылку на него.
+ ## 10. Готовый playbook выложите в свой репозиторий, в ответ предоставьте ссылку на него.
 
-https://github.com/zaitsev54/ansible/tree/main/2
+https://github.com/Nonstopus/devops-netology/blob/main/ansible/2/
