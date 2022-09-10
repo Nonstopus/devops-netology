@@ -1,4 +1,4 @@
-##1-3. Файл создан: my_new_module.py, заполнен и отредактирован
+## 1-3. Файл создан: my_new_module.py, заполнен и отредактирован
 ## 4. Локальный тест выполнен: 
 nonstop@umbrella:~/devops-projects/myrepo/8_ansible/ansible_rep/ansible $ python -m ansible.modules.my_new_module input.json
 
