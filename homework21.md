@@ -1,5 +1,5 @@
-1-3. Файл создан: my_new_module.py, заполнен и отредактирован
-4. Локальный тест выполнен: 
+##1-3. Файл создан: my_new_module.py, заполнен и отредактирован
+## 4. Локальный тест выполнен: 
 nonstop@umbrella:~/devops-projects/myrepo/8_ansible/ansible_rep/ansible $ python -m ansible.modules.my_new_module input.json
 
 {"invocation": {"module_args": {"content": "some data \nmulti line", "path": "/tmp/test.txt"}}, "message": "file was written", "changed": true, "original_message": "some data \nmulti line"}
@@ -10,7 +10,7 @@ multi line
 nonstop@umbrella:~/devops-projects/myrepo/8_ansible/ansible_rep/ansible $ 
 
 
-5-6. проверка  playbook
+## 5-6. проверка  playbook
 nonstop@umbrella:~/devops-projects/myrepo/8_ansible/ansible_rep/ansible $ ansible-playbook test_pb.yml 
 [WARNING]: You are running the development version of Ansible. You should only run
 Ansible from "devel" if you are modifying the Ansible engine, or trying out features
@@ -77,10 +77,10 @@ localhost                  : ok=3    changed=0    unreachable=0    failed=0    s
 
 
 
-7. выход из окружения
+## 7. выход из окружения
 nonstop@umbrella:~/devops-projects/myrepo/8_ansible/ansible_rep/ansible $  deactivate
 
-8-11. Роль создана, запущена + идемпотентность
+## 8-11. Роль создана, запущена + идемпотентность
 
 nonstop@umbrella:~/devops-projects/myrepo/8_ansible/1 $ ansible-galaxy collection init my_netology.my_collection
 - Collection my_netology.my_collection was created successfully
@@ -119,12 +119,12 @@ localhost                  : ok=2    changed=0    unreachable=0    failed=0    s
 nonstop@umbrella:~/devops-projects/myrepo/8_ansible/1 $ 
 
 
-12-13. Коллекция заведена создана
+## 12-13. Коллекция заведена создана
 nonstop@umbrella:~/devops-projects/myrepo/8_ansible/my_collection/my_netology/my_collection $ ansible-galaxy collection build
 Created collection for my_netology.my_collection at /home/nonstop/devops-projects/myrepo/8_ansible/my_collection/my_netology/my_collection/my_netology-my_collection-1.0.0.tar.gz
 
 
-14-16. Запуск Playbook из коллекции
+## 14-16. Запуск Playbook из коллекции
 nonstop@umbrella:~/devops-projects/myrepo/8_ansible/1 $ ansible-playbook site.yml
 [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost
 does not match 'all'
@@ -198,3 +198,5 @@ nonstop@umbrella:~/devops-projects/myrepo/8_ansible/1 $ cat site.yml
     - name: dump test_out
       debug:
         msg: "{{ test_out }}"  
+       
+  ## 17. https://github.com/Nonstopus/my_collection
