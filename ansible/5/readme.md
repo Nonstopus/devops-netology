@@ -5,10 +5,10 @@ nonstop@umbrella:~/devops-projects/myrepo/8_ansible/ansible_rep/ansible $ python
 
 {"invocation": {"module_args": {"content": "some data \nmulti line", "path": "/tmp/test.txt"}}, "message": "file was written", "changed": true, "original_message": "some data \nmulti line"}
 
-nonstop@umbrella:~/devops-projects/myrepo/8_ansible/ansible_rep/ansible $ cat /tmp/test.txt
+nonstop@umbrella: ~/devops-projects/myrepo/8_ansible/ansible_rep/ansible $ cat /tmp/test.txt
 some data 
 multi line
-nonstop@umbrella:~/devops-projects/myrepo/8_ansible/ansible_rep/ansible $ 
+nonstop@umbrella: ~/devops-projects/myrepo/8_ansible/ansible_rep/ansible $ 
 
 
 5-6. проверка  playbook
